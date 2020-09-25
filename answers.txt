@@ -1,0 +1,11 @@
+3 commits exist in the repository history after completing step 8
+
+The file .gitignore was created on Jan 24, 2017
+
+Git log shows committed snapshots. Git status lets you inspect the working directory and the staging area.
+
+Untracked files are new files that have never been staged. Unstaged files are files that have previously been staged, but changed have been made that have not yet been staged.
+
+Git reset reverts all of the changes back to a specific commit. Git checkout prepares for a branch.
+
+If you try to pull remote changes when there are uncommitted changes in your working directory, any changes you’ve made to the files would revert to the last commit. Any new files you’ve added in your working directory that were not in the last commit would remain in your working directory.

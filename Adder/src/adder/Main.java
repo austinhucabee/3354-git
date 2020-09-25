@@ -7,7 +7,14 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide integers to add");
+            if (args.length < 2) {
+                System.err.println("Please provide at least 2 integers to add");
+            } else if (!args[0].equals("-") && args.length > 3) {
+                System.err.println("Invalid character");
+            } else if (args[0].equals("-") && args.length < 3) {
+                System.err.println("Please provide at least 2 integers to add");
+            }
+            //System.err.println("Please provide integers to add");
         }
     }
 
